@@ -34,7 +34,7 @@ A modern, responsive unit converter web application with multiple conversion cat
 
 ## Live Demo
 
-Visit the live demo: [Unit Converter](https://choyon-dev.github.io/unit-converter)
+Visit the live demo: [Unit Converter](https://choyon-dev.github.io/Modern-Unite-Converter/)
 
 ## Installation
 
