@@ -2,8 +2,6 @@
 
 A modern, responsive unit converter web application with multiple conversion categories and a beautiful glass-morphism design.
 
-![Unit Converter Preview](assets/preview.png)
-
 ## Features
 
 - 12 different conversion categories:
