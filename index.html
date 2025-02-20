@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Converter</title>
+    <link rel="icon" href="assets/Unit Converter.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="glass-card">
+            <h1>Unit Converter</h1>
+            <div class="theme-controls">
+                <button id="theme-toggle">🌙</button>
+                <button id="sound-toggle">🔊</button>
+            </div>
+        </header>
+
+        <div class="converter-container">
+            <div class="category-tabs glass-card">
+                <button class="tab active" data-category="length">Length</button>
+                <button class="tab" data-category="weight">Weight</button>
+                <button class="tab" data-category="temperature">Temperature</button>
+                <button class="tab" data-category="area">Area</button>
+                <button class="tab" data-category="volume">Volume</button>
+                <button class="tab" data-category="speed">Speed</button>
+                <button class="tab" data-category="time">Time</button>
+                <button class="tab" data-category="pressure">Pressure</button>
+                <button class="tab" data-category="energy">Energy</button>
+                <button class="tab" data-category="digital">Digital</button>
+                <button class="tab" data-category="fuel">Fuel</button>
+                <button class="tab" data-category="currency">Currency</button>
+            </div>
+
+            <div class="conversion-section glass-card active" data-category="length">
+                <div class="input-group">
+                    <input type="number" id="cm" placeholder="Centimeters">
+                    <span>cm</span>
+                    <div class="swap-btn">⇄</div>
+                    <input type="number" id="inch" placeholder="Inches">
+                    <span>in</span>
+                </div>
+            </div>
+
+            <div class="conversion-section glass-card" data-category="weight">
+                <div class="input-group">
+                    <input type="number" id="kg" placeholder="Kilograms">
+                    <span>kg</span>
+                    <div class="swap-btn">⇄</div>
+                    <input type="number" id="lb" placeholder="Pounds">
+                    <span>lb</span>
+                </div>
+            </div>
+
+            <div class="conversion-section glass-card" data-category="temperature">
+                <div class="input-group">
+                    <input type="number" id="celsius" placeholder="Celsius">
+                    <span>°C</span>
+                    <div class="swap-btn">⇄</div>
+                    <input type="number" id="fahrenheit" placeholder="Fahrenheit">
+                    <span>°F</span>
+                </div>
+            </div>
+
+            <div class="conversion-section glass-card" data-category="area">
+                <div class="input-group">
+                    <input type="number" id="sqm" placeholder="Square Meters">
+                    <span>m²</span>
+                    <div class="swap-btn">⇄</div>
+                    <input type="number" id="sqft" placeholder="Square Feet">
+                    <span>ft²</span>
+                </div>
+            </div>
+
+            <div class="conversion-section glass-card" data-category="volume">
+                <div class="input-group">
+                    <input type="number" id="liter" placeholder="Liters">
+                    <span>L</span>
+                    <div class="swap-btn">⇄</div>
+                    <input type="number" id="gallon" placeholder="Gallons">
+                    <span>gal</span>
+                </div>
+            </div>
+
+            <div class="conversion-section glass-card" data-category="speed">
+                <div class="input-group">
+                    <input type="number" id="kmh" placeholder="Kilometers per Hour">
+                    <span>km/h</span>
+                    <div class="swap-btn">⇄</div>
+                    <input type="number" id="mph" placeholder="Miles per Hour">
+                    <span>mph</span>
+                </div>
+            </div>
+
+            <div class="conversion-section glass-card" data-category="time">
+                <div class="input-group">
+                    <input type="number" id="hours" placeholder="Hours">
+                    <span>hr</span>
+                    <div class="swap-btn">⇄</div>
+                    <input type="number" id="minutes" placeholder="Minutes">
+                    <span>min</span>
+                </div>
+            </div>
+
+            <div class="conversion-section glass-card" data-category="pressure">
+                <div class="input-group">
+                    <input type="number" id="bar" placeholder="Bar">
+                    <span>bar</span>
+                    <div class="swap-btn">⇄</div>
+                    <input type="number" id="psi" placeholder="PSI">
+                    <span>psi</span>
+                </div>
+            </div>
+
+            <div class="conversion-section glass-card" data-category="energy">
+                <div class="input-group">
+                    <input type="number" id="joule" placeholder="Joules">
+                    <span>J</span>
+                    <div class="swap-btn">⇄</div>
+                    <input type="number" id="calorie" placeholder="Calories">
+                    <span>cal</span>
+                </div>
+            </div>
+
+            <div class="conversion-section glass-card" data-category="digital">
+                <div class="input-group">
+                    <input type="number" id="mb" placeholder="Megabytes">
+                    <span>MB</span>
+                    <div class="swap-btn">⇄</div>
+                    <input type="number" id="gb" placeholder="Gigabytes">
+                    <span>GB</span>
+                </div>
+            </div>
+
+            <div class="conversion-section glass-card" data-category="fuel">
+                <div class="input-group">
+                    <input type="number" id="lp100" placeholder="L/100km">
+                    <span>L/100km</span>
+                    <div class="swap-btn">⇄</div>
+                    <input type="number" id="mpg" placeholder="Miles per Gallon">
+                    <span>mpg</span>
+                </div>
+            </div>
+
+            <div class="conversion-section glass-card" data-category="currency">
+                <div class="input-group">
+                    <input type="number" id="usd" placeholder="US Dollar">
+                    <span>USD</span>
+                    <div class="swap-btn">⇄</div>
+                    <input type="number" id="eur" placeholder="Euro">
+                    <span>EUR</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal glass-card">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h3 id="modal-title"></h3>
+                <p id="modal-text"></p>
+            </div>
+        </div>
+
+        <footer class="glass-card footer">
+            <p>Created with ❤️ by <a href="https://github.com/choyon-dev" target="_blank">Fajle Rabbi Choyon</a></p>
+            <p>Visit my <a href="https://choyon.pro" target="_blank">website</a></p>
+        </footer>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
